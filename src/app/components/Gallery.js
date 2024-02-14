@@ -145,7 +145,7 @@ const Gallery = () => {
         </div>
 
         {/* Lightbox */}
-        {isOpenImage && (
+        {/* {isOpenImage && (
           <Lightbox
             mainSrc={images[photoIndex]}
             nextSrc={images[(photoIndex + 1) % images.length]}
@@ -158,7 +158,7 @@ const Gallery = () => {
               setPhotoIndex((photoIndex + 1) % images.length)
             }
           />
-        )}
+        )} */}
       </section>
     </>
   )
