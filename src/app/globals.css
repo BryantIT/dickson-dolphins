@@ -34,7 +34,7 @@ Default CSS
 body {
   padding: 0;
   margin: 0;
-  background-color: #000000;
+  background-color: #005778;
   color: #ffffff;
   font-family: 'Teko', sans-serif;
   font-size: 17px;
@@ -371,7 +371,7 @@ Main Banner Area CSS
   position: relative;
   z-index: 1;
   overflow: hidden;
-  background-image: url(/images/football/footb-main-banner1.jpg);
+  background-image: url(/images/football/dolphinBanner.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -403,11 +403,12 @@ Main Banner Area CSS
   display: block;
   text-transform: uppercase;
   line-height: 1;
-  color: #970014;
+  color: #fc4c02;
   letter-spacing: 5px;
   margin-bottom: -10px;
   font-size: 70px;
   font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .main-banner-content h1 {
@@ -417,6 +418,7 @@ Main Banner Area CSS
   letter-spacing: 2px;
   font-size: 290px;
   font-weight: 600;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .banner-footer-content {
