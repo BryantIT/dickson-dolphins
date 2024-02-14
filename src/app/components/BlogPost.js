@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const BlogPost = () => {
   return (
@@ -19,7 +20,12 @@ const BlogPost = () => {
           <div className='col-lg-4 col-md-6'>
             <div className='single-blog-post'>
               <div className='post-image'>
-                <img src='/images/football/blog/footb-blog1.jpg' alt='image' />
+                <div className='img'>
+                  <Image
+                    src='/images/football/blog/footb-blog1.jpg'
+                    alt='image'
+                  />
+                </div>
                 <Link href='/football-single-blog'>
                   {/* <a target="_blank" className="link-btn"></a> */}
                 </Link>
@@ -52,7 +58,12 @@ const BlogPost = () => {
           <div className='col-lg-4 col-md-6'>
             <div className='single-blog-post'>
               <div className='post-image'>
-                <img src='/images/football/blog/footb-blog2.jpg' alt='image' />
+                <div className='img'>
+                  <Image
+                    src='/images/football/blog//images/football/blog/footb-blog2.jpg'
+                    alt='image'
+                  />
+                </div>
                 <Link href='/football-single-blog'>
                   {/* <a target='_blank' className='link-btn'></a> */}
                 </Link>
@@ -87,7 +98,12 @@ const BlogPost = () => {
           <div className='col-lg-4 col-md-6 offset-lg-0 offset-md-3'>
             <div className='single-blog-post'>
               <div className='post-image'>
-                <img src='/images/football/blog/footb-blog3.jpg' alt='image' />
+                <div className='img'>
+                  <Image
+                    src='/images/football/blog/footb-blog3.jpg'
+                    alt='image'
+                  />
+                </div>
                 <Link href='/football-single-blog'>
                   {/* <a target='_blank' className='link-btn'></a> */}
                 </Link>

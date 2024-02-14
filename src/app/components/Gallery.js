@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import OwlCarousel from 'react-owl-carousel3'
+import Image from 'next/image'
+
 // const OwlCarousel = dynamic(import('react-owl-carousel3'))
 // import Lightbox from 'react-image-lightbox'
 // TODO: use react-photoswipe gallery
@@ -69,10 +71,13 @@ const Gallery = () => {
               {...options}
             >
               <div className='single-gallery-item'>
-                <img
-                  src='/images/football/gallery/footb-gallery1.jpg'
-                  alt='image'
-                />
+                <div className='img'>
+                  <Image
+                    src='/images/football/gallery/footb-gallery1.jpg'
+                    alt='image'
+                  />
+                </div>
+
                 <Link
                   href='#popup'
                   className='link-btn popup-btn'
@@ -85,10 +90,12 @@ const Gallery = () => {
               </div>
 
               <div className='single-gallery-item'>
-                <img
-                  src='/images/football/gallery/footb-gallery2.jpg'
-                  alt='image'
-                />
+                <div className='img'>
+                  <Image
+                    src='/images/football/gallery/footb-gallery2.jpg'
+                    alt='image'
+                  />
+                </div>
 
                 <Link
                   href='#'
@@ -102,10 +109,12 @@ const Gallery = () => {
               </div>
 
               <div className='single-gallery-item'>
-                <img
-                  src='/images/football/gallery/footb-gallery3.jpg'
-                  alt='image'
-                />
+                <div className='img'>
+                  <Image
+                    src='/images/football/gallery/footb-gallery3.jpg'
+                    alt='image'
+                  />
+                </div>
 
                 <Link
                   href='#'
@@ -119,10 +128,12 @@ const Gallery = () => {
               </div>
 
               <div className='single-gallery-item'>
-                <img
-                  src='/images/football/gallery/footb-gallery4.jpg'
-                  alt='image'
-                />
+                <div className='img'>
+                  <Image
+                    src='/images/football/gallery/footb-gallery4.jpg'
+                    alt='image'
+                  />
+                </div>
 
                 <Link
                   href='#'
@@ -141,7 +152,9 @@ const Gallery = () => {
         </div>
 
         <div className='gallery-shape1'>
-          <img src='/images/football/footb-player2.png' alt='image' />
+          <div className='img'>
+            <Image src='/images/football/footb-player2.png' alt='image' />
+          </div>
         </div>
 
         {/* Lightbox */}

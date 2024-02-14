@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Partners = () => {
   return (
@@ -19,10 +20,12 @@ const Partners = () => {
           <div className='col-lg-3 col-sm-4 col-md-4 col-6'>
             <div className='single-partners-box'>
               <Link href='#'>
-                <img
-                  src='/images/football/partner/footb-partner1.png'
-                  alt='image'
-                />
+                <div className='img'>
+                  <Image
+                    src='/images/football/partner/footb-partner1.png'
+                    alt='image'
+                  />
+                </div>
               </Link>
             </div>
           </div>
@@ -30,10 +33,12 @@ const Partners = () => {
           <div className='col-lg-3 col-sm-4 col-md-4 col-6'>
             <div className='single-partners-box'>
               <Link href='#'>
-                <img
-                  src='/images/football/partner/footb-partner2.png'
-                  alt='image'
-                />
+                <div className='img'>
+                  <Image
+                    src='/images/football/partner/footb-partner2.png'
+                    alt='image'
+                  />
+                </div>
               </Link>
             </div>
           </div>
@@ -41,10 +46,12 @@ const Partners = () => {
           <div className='col-lg-3 col-sm-4 col-md-4 col-6'>
             <div className='single-partners-box'>
               <Link href='#'>
-                <img
-                  src='/images/football/partner/footb-partner3.png'
-                  alt='image'
-                />
+                <div className='img'>
+                  <Image
+                    src='/images/football/partner/footb-partner3.png'
+                    alt='image'
+                  />
+                </div>
               </Link>
             </div>
           </div>
@@ -52,10 +59,12 @@ const Partners = () => {
           <div className='col-lg-3 col-sm-4 col-md-4 col-6'>
             <div className='single-partners-box'>
               <Link href='#'>
-                <img
-                  src='/images/football/partner/footb-partner4.png'
-                  alt='image'
-                />
+                <div className='img'>
+                  <Image
+                    src='/images/football/partner/footb-partner4.png'
+                    alt='image'
+                  />
+                </div>
               </Link>
             </div>
           </div>
@@ -63,10 +72,12 @@ const Partners = () => {
           <div className='col-lg-3 col-sm-4 col-md-4 col-6'>
             <div className='single-partners-box'>
               <Link href='#'>
-                <img
-                  src='/images/football/partner/footb-partner5.png'
-                  alt='image'
-                />
+                <div className='img'>
+                  <Image
+                    src='/images/football/partner/footb-partner5.png'
+                    alt='image'
+                  />
+                </div>
               </Link>
             </div>
           </div>
@@ -74,10 +85,12 @@ const Partners = () => {
           <div className='col-lg-3 col-sm-4 col-md-4 col-6'>
             <div className='single-partners-box'>
               <Link href='#'>
-                <img
-                  src='/images/football/partner/footb-partner6.png'
-                  alt='image'
-                />
+                <div className='img'>
+                  <Image
+                    src='/images/football/partner/footb-partner6.png'
+                    alt='image'
+                  />
+                </div>
               </Link>
             </div>
           </div>
@@ -85,10 +98,12 @@ const Partners = () => {
           <div className='col-lg-3 col-sm-4 col-md-4 col-6'>
             <div className='single-partners-box'>
               <Link href='#'>
-                <img
-                  src='/images/football/partner/footb-partner7.png'
-                  alt='image'
-                />
+                <div className='img'>
+                  <Image
+                    src='/images/football/partner/footb-partner7.png'
+                    alt='image'
+                  />
+                </div>
               </Link>
             </div>
           </div>
@@ -96,10 +111,12 @@ const Partners = () => {
           <div className='col-lg-3 col-sm-4 col-md-4 col-6'>
             <div className='single-partners-box'>
               <Link href='#'>
-                <img
-                  src='/images/football/partner/footb-partner8.png'
-                  alt='image'
-                />
+                <div className='img'>
+                  <Image
+                    src='/images/football/partner/footb-partner8.png'
+                    alt='image'
+                  />
+                </div>
               </Link>
             </div>
           </div>

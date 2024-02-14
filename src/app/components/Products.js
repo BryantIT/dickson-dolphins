@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Products = () => {
   return (
@@ -18,10 +19,12 @@ const Products = () => {
         <div className='row'>
           <div className='col-lg-3 col-sm-6'>
             <div className='single-products-box'>
-              <img
-                src='/images/football/products/footb-product1.jpg'
-                alt='image'
-              />
+              <div className='img'>
+                <Image
+                  src='/images/football/products/footb-product1.jpg'
+                  alt='image'
+                />
+              </div>
 
               <div className='content'>
                 <h3>Kreton Footwear</h3>
@@ -42,10 +45,12 @@ const Products = () => {
 
           <div className='col-lg-3 col-sm-6'>
             <div className='single-products-box'>
-              <img
-                src='/images/football/products/footb-product2.jpg'
-                alt='image'
-              />
+              <div className='img'>
+                <Image
+                  src='/images/football/products/footb-product2.jpg'
+                  alt='image'
+                />
+              </div>
 
               <div className='content'>
                 <h3>Kreton Denim</h3>
@@ -67,10 +72,12 @@ const Products = () => {
 
           <div className='col-lg-3 col-sm-6'>
             <div className='single-products-box'>
-              <img
-                src='/images/football/products/footb-product3.jpg'
-                alt='image'
-              />
+              <div className='img'>
+                <Image
+                  src='/images/football/products/footb-product3.jpg'
+                  alt='image'
+                />
+              </div>
 
               <div className='content'>
                 <h3>Kreton Underwear</h3>
@@ -92,10 +99,12 @@ const Products = () => {
 
           <div className='col-lg-3 col-sm-6'>
             <div className='single-products-box'>
-              <img
-                src='/images/football/products/footb-product4.jpg'
-                alt='image'
-              />
+              <div className='img'>
+                <Image
+                  src='/images/football/products/footb-product4.jpg'
+                  alt='image'
+                />
+              </div>
 
               <div className='content'>
                 <h3>Kreton Fragrances</h3>

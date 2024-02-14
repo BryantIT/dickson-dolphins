@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 // const OwlCarousel = dynamic(import('react-owl-carousel3'))
 import OwlCarousel from 'react-owl-carousel3'
 
@@ -67,11 +68,15 @@ class UpcomingMatches extends Component {
                 <span className='sub-title'>Champions League</span>
 
                 <div className='vs-matches'>
-                  <img src='/images/football/footb-team1.png' alt='image' />
+                  <div className='img'>
+                    <Image src='/images/football/footb-team1.png' alt='image' />
+                  </div>
                   <h4>Napoli</h4>
                   <span>VS</span>
                   <h4>Barcelona</h4>
-                  <img src='/images/football/footb-team2.png' alt='image' />
+                  <div className='img'>
+                    <Image src='/images/football/footb-team2.png' alt='image' />
+                  </div>
                 </div>
 
                 <Link href='#' className='default-btn'>
@@ -87,11 +92,15 @@ class UpcomingMatches extends Component {
                 <span className='sub-title'>Champions League</span>
 
                 <div className='vs-matches'>
-                  <img src='/images/football/footb-team1.png' alt='image' />
+                  <div className='img'>
+                    <Image src='/images/football/footb-team1.png' alt='image' />
+                  </div>
                   <h4>Real Madrid</h4>
                   <span>VS</span>
                   <h4>Barcelona</h4>
-                  <img src='/images/football/footb-team2.png' alt='image' />
+                  <div className='img'>
+                    <Image src='/images/football/footb-team2.png' alt='image' />
+                  </div>
                 </div>
 
                 <Link href='#' className='default-btn'>
@@ -107,11 +116,15 @@ class UpcomingMatches extends Component {
                 <span className='sub-title'>La Liga</span>
 
                 <div className='vs-matches'>
-                  <img src='/images/football/footb-team1.png' alt='image' />
+                  <div className='img'>
+                    <Image src='/images/football/footb-team1.png' alt='image' />
+                  </div>
                   <h4>Sevilla</h4>
                   <span>VS</span>
                   <h4>Barcelona</h4>
-                  <img src='/images/football/footb-team2.png' alt='image' />
+                  <div className='img'>
+                    <Image src='/images/football/footb-team2.png' alt='image' />
+                  </div>
                 </div>
 
                 <Link href='#' className='default-btn'>
@@ -125,7 +138,9 @@ class UpcomingMatches extends Component {
         </div>
 
         <div className='upcoming-matches-shape1'>
-          <img src='/images/football/footb-player1.png' alt='image' />
+          <div className='img'>
+            <Image src='/images/football/footb-player1.png' alt='image' />
+          </div>
         </div>
       </section>
     )
