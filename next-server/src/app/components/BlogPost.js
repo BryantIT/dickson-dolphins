@@ -1,6 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+// image imports
+import footbblog1 from '../../../public/images/football/blog/footb-blog1.jpg'
+import footbblog2 from '../../../public/images/football/blog/footb-blog2.jpg'
+import footbblog3 from '../../../public/images/football/blog/footb-blog3.jpg'
 
 const BlogPost = () => {
   return (
@@ -21,10 +25,7 @@ const BlogPost = () => {
             <div className='single-blog-post'>
               <div className='post-image'>
                 <div className='img'>
-                  <Image
-                    src='/images/football/blog/footb-blog1.jpg'
-                    alt='image'
-                  />
+                  <Image src={footbblog1} alt='image' />
                 </div>
                 <Link href='/football-single-blog'>
                   {/* <a target="_blank" className="link-btn"></a> */}
@@ -59,10 +60,7 @@ const BlogPost = () => {
             <div className='single-blog-post'>
               <div className='post-image'>
                 <div className='img'>
-                  <Image
-                    src='/images/football/blog//images/football/blog/footb-blog2.jpg'
-                    alt='image'
-                  />
+                  <Image src={footbblog2} alt='image' />
                 </div>
                 <Link href='/football-single-blog'>
                   {/* <a target='_blank' className='link-btn'></a> */}
@@ -99,10 +97,7 @@ const BlogPost = () => {
             <div className='single-blog-post'>
               <div className='post-image'>
                 <div className='img'>
-                  <Image
-                    src='/images/football/blog/footb-blog3.jpg'
-                    alt='image'
-                  />
+                  <Image src={footbblog3} alt='image' />
                 </div>
                 <Link href='/football-single-blog'>
                   {/* <a target='_blank' className='link-btn'></a> */}

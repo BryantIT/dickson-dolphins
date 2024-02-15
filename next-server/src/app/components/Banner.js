@@ -28,17 +28,23 @@ const Banner = () => {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    <FaFacebook />
+                    <span className='icon'>
+                      <FaFacebook />
+                    </span>
                   </a>
                 </li>
                 <li>
                   <Link href='#'>
-                    <FaXTwitter />
+                    <span className='icon'>
+                      <FaXTwitter />
+                    </span>
                   </Link>
                 </li>
                 <li>
                   <Link href='#'>
-                    <FaInstagram />
+                    <span className='icon'>
+                      <FaInstagram />
+                    </span>
                   </Link>
                 </li>
               </ul>

@@ -4,6 +4,10 @@ import dynamic from 'next/dynamic'
 import Image from 'next/image'
 // const OwlCarousel = dynamic(import('react-owl-carousel3'))
 import OwlCarousel from 'react-owl-carousel3'
+// image imports
+import footbteam1 from '../../../public/images/football/footb-team1.png'
+import footbteam2 from '../../../public/images/football/footb-team2.png'
+import footbplayer1 from '../../../public/images/football/footb-player1.png'
 
 const options = {
   loop: true,
@@ -69,13 +73,13 @@ class UpcomingMatches extends Component {
 
                 <div className='vs-matches'>
                   <div className='img'>
-                    <Image src='/images/football/footb-team1.png' alt='image' />
+                    <Image src={footbteam1} alt='image' />
                   </div>
                   <h4>Napoli</h4>
                   <span>VS</span>
                   <h4>Barcelona</h4>
                   <div className='img'>
-                    <Image src='/images/football/footb-team2.png' alt='image' />
+                    <Image src={footbteam2} alt='image' />
                   </div>
                 </div>
 
@@ -93,13 +97,13 @@ class UpcomingMatches extends Component {
 
                 <div className='vs-matches'>
                   <div className='img'>
-                    <Image src='/images/football/footb-team1.png' alt='image' />
+                    <Image src={footbteam1} alt='image' />
                   </div>
                   <h4>Real Madrid</h4>
                   <span>VS</span>
                   <h4>Barcelona</h4>
                   <div className='img'>
-                    <Image src='/images/football/footb-team2.png' alt='image' />
+                    <Image src={footbteam2} alt='image' />
                   </div>
                 </div>
 
@@ -117,13 +121,13 @@ class UpcomingMatches extends Component {
 
                 <div className='vs-matches'>
                   <div className='img'>
-                    <Image src='/images/football/footb-team1.png' alt='image' />
+                    <Image src={footbteam1} alt='image' />
                   </div>
                   <h4>Sevilla</h4>
                   <span>VS</span>
                   <h4>Barcelona</h4>
                   <div className='img'>
-                    <Image src='/images/football/footb-team2.png' alt='image' />
+                    <Image src={footbteam2} alt='image' />
                   </div>
                 </div>
 
@@ -139,7 +143,7 @@ class UpcomingMatches extends Component {
 
         <div className='upcoming-matches-shape1'>
           <div className='img'>
-            <Image src='/images/football/footb-player1.png' alt='image' />
+            <Image src={footbplayer1} alt='image' />
           </div>
         </div>
       </section>

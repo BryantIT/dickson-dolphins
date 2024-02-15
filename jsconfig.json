@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["next-server/src/*rver/src/*rver/src/*"]
     }
   }
 }

@@ -1,6 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+// image imports
+import football1 from '../../../public/images/football/football1.png'
+import football2 from '../../../public/images/football/football2.png'
 
 const Subscribe = () => {
   return (
@@ -42,12 +45,12 @@ const Subscribe = () => {
 
           <div className='subscribe-shape1'>
             <div className='img'>
-              <Image src='/images/football/football1.png' alt='image' />
+              <Image src={football1} alt='image' />
             </div>
           </div>
           <div className='subscribe-shape2'>
             <div className='img'>
-              <Image src='/images/football/football2.png' alt='image' />
+              <Image src={football2} alt='image' />
             </div>
           </div>
         </div>

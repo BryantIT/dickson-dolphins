@@ -711,7 +711,7 @@ Upcoming Matches Area CSS
   right: -60px;
 }
 
-.upcoming-matches-slides.owl-theme .owl-nav [class*='owl-'].owl-prev i {
+.upcoming-matches-slides.owl-theme .owl-nav [class*='owl-'].owl-prev .icon {
   -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg);
   display: inline-block;
@@ -826,7 +826,7 @@ Matches Highlights Area CSS
   z-index: -1;
 }
 
-.single-matches-highlights-item .highlights-video .video-btn i {
+.single-matches-highlights-item .highlights-video .video-btn .icon {
   font-size: 50px;
   position: absolute;
   right: 0;
@@ -1054,7 +1054,7 @@ Gallery Area CSS
   right: -60px;
 }
 
-.gallery-slides.owl-theme .owl-nav [class*='owl-'].owl-prev i {
+.gallery-slides.owl-theme .owl-nav [class*='owl-'].owl-prev .icon {
   -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg);
   display: inline-block;
@@ -1518,7 +1518,7 @@ Blog Details Area CSS
   background-color: #000000;
 }
 
-.page-banner-area .back-home i {
+.page-banner-area .back-home .icon {
   position: relative;
   top: 1px;
 }
@@ -1550,7 +1550,7 @@ Blog Details Area CSS
   padding-left: 45px;
 }
 
-.blog-details-header .entry-meta ul li i {
+.blog-details-header .entry-meta ul li .icon {
   font-size: 32px;
   color: #c6c6c6;
   position: absolute;
@@ -2520,7 +2520,7 @@ Footer Area CSS
   text-transform: uppercase;
 }
 
-.footer-area p i {
+.footer-area p .icon {
   margin-right: 2px;
   font-size: 14px;
 }
@@ -2567,7 +2567,7 @@ Footer Area CSS
   line-height: 1;
 }
 
-.footer-area .social li a i {
+.footer-area .social li a .icon {
   position: absolute;
   left: 0;
   right: 0;
@@ -2636,7 +2636,7 @@ Footer Area CSS
   z-index: 9999;
 }
 
-.go-top i {
+.go-top .icon {
   background-color: #970014;
   color: #ffffff;
   width: 30px;
@@ -2875,7 +2875,7 @@ Footer Area CSS
     width: 48px;
     height: 1px;
   }
-  .single-matches-highlights-item .highlights-video .video-btn i {
+  .single-matches-highlights-item .highlights-video .video-btn .icon {
     font-size: 35px;
   }
   .matches-highlights-slides.owl-theme .owl-nav [class*='owl-'] {
@@ -2980,7 +2980,7 @@ Footer Area CSS
     padding-right: 15px;
     padding-left: 0;
   }
-  .blog-details-header .entry-meta ul li i {
+  .blog-details-header .entry-meta ul li .icon {
     display: none;
   }
   .blog-details-header .entry-meta ul li span {
