@@ -92,7 +92,6 @@ const NextMatch = () => {
 
               <div className='shape1'>
                 <div className='img'>
-                  {/* <img src='/images/football/footb-playing.png' alt='image' /> */}
                   <Image
                     src='/images/football/footb-playing.png'
                     alt='image'

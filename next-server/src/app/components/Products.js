@@ -21,7 +21,7 @@ const Products = () => {
             <div className='single-products-box'>
               <div className='img'>
                 <Image
-                  src='/images/football/products/footb-product1'
+                  src='/images/football/products/footb-product1.jpg'
                   alt='image'
                   width={750}
                   height={1000}
@@ -49,7 +49,7 @@ const Products = () => {
             <div className='single-products-box'>
               <div className='img'>
                 <Image
-                  src='/images/football/products/footb-product2'
+                  src='/images/football/products/footb-product2.jpg'
                   alt='image'
                   width={750}
                   height={1000}
@@ -78,7 +78,7 @@ const Products = () => {
             <div className='single-products-box'>
               <div className='img'>
                 <Image
-                  src='/images/football/products/footb-product3'
+                  src='/images/football/products/footb-product3.jpg'
                   alt='image'
                   width={750}
                   height={1000}
@@ -107,7 +107,7 @@ const Products = () => {
             <div className='single-products-box'>
               <div className='img'>
                 <Image
-                  src='/images/football/products/footb-product4'
+                  src='/images/football/products/footb-product4.jpg'
                   alt='image'
                   width={750}
                   height={1000}

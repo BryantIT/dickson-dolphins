@@ -9,10 +9,12 @@ import Partners from '../../src/app/components/Partners'
 import Gallery from '../../src/app/components/Gallery'
 import Subscribe from '../../src/app/components/Subscribe'
 import BlogPost from '../../src/app/components/BlogPost'
+import Navbar from '../../src/app/components/Navbar'
 
 const Football = () => {
   return (
     <>
+      <Navbar />
       <Banner />
 
       <NextMatch />
