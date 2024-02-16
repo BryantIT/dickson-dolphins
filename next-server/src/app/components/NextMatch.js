@@ -1,8 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-// image imports
-import footbplaying from '../../../public/images/football/footb-playing.png'
-import footbfield from '../../../public/images/football/footb-field.jpg'
 
 const NextMatch = () => {
   const [days, setDays] = React.useState('')
@@ -95,7 +92,13 @@ const NextMatch = () => {
 
               <div className='shape1'>
                 <div className='img'>
-                  <Image src={footbplaying} alt='image' />
+                  {/* <img src='/images/football/footb-playing.png' alt='image' /> */}
+                  <Image
+                    src='/images/football/footb-playing.png'
+                    alt='image'
+                    width={854}
+                    height={319}
+                  />
                 </div>
               </div>
             </div>
@@ -104,7 +107,12 @@ const NextMatch = () => {
           <div className='col-lg-6 col-md-12'>
             <div className='next-match-image'>
               <div className='img'>
-                <Image src={footbfield} alt='image' />
+                <Image
+                  src='/images/football/footb-field.jpg'
+                  alt='image'
+                  width={945}
+                  height={350}
+                />
               </div>
             </div>
           </div>

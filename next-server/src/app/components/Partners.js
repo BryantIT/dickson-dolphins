@@ -1,15 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-// image imports
-import footbpartner1 from '../../../public/images/football/partner/footb-partner1.png'
-import footbpartner2 from '../../../public/images/football/partner/footb-partner2.png'
-import footbpartner3 from '../../../public/images/football/partner/footb-partner3.png'
-import footbpartner4 from '../../../public/images/football/partner/footb-partner4.png'
-import footbpartner5 from '../../../public/images/football/partner/footb-partner5.png'
-import footbpartner6 from '../../../public/images/football/partner/footb-partner6.png'
-import footbpartner7 from '../../../public/images/football/partner/footb-partner7.png'
-import footbpartner8 from '../../../public/images/football/partner/footb-partner8.png'
 
 const Partners = () => {
   return (
@@ -30,7 +21,12 @@ const Partners = () => {
             <div className='single-partners-box'>
               <Link href='#'>
                 <div className='img'>
-                  <Image src={footbpartner1} alt='image' />
+                  <Image
+                    src='/images/football/partner/footb-partner1.png'
+                    alt='image'
+                    width={185}
+                    height={60}
+                  />
                 </div>
               </Link>
             </div>
@@ -40,7 +36,12 @@ const Partners = () => {
             <div className='single-partners-box'>
               <Link href='#'>
                 <div className='img'>
-                  <Image src={footbpartner2} alt='image' />
+                  <Image
+                    src='/images/football/partner/footb-partner2.png'
+                    alt='image'
+                    width={185}
+                    height={60}
+                  />
                 </div>
               </Link>
             </div>
@@ -50,7 +51,12 @@ const Partners = () => {
             <div className='single-partners-box'>
               <Link href='#'>
                 <div className='img'>
-                  <Image src={footbpartner3} alt='image' />
+                  <Image
+                    src='/images/football/partner/footb-partner3.png'
+                    alt='image'
+                    width={185}
+                    height={60}
+                  />
                 </div>
               </Link>
             </div>
@@ -60,7 +66,12 @@ const Partners = () => {
             <div className='single-partners-box'>
               <Link href='#'>
                 <div className='img'>
-                  <Image src={footbpartner4} alt='image' />
+                  <Image
+                    src='/images/football/partner/footb-partner4.png'
+                    alt='image'
+                    width={185}
+                    height={60}
+                  />
                 </div>
               </Link>
             </div>
@@ -70,7 +81,12 @@ const Partners = () => {
             <div className='single-partners-box'>
               <Link href='#'>
                 <div className='img'>
-                  <Image src={footbpartner5} alt='image' />
+                  <Image
+                    src='/images/football/partner/footb-partner5.png'
+                    alt='image'
+                    width={185}
+                    height={60}
+                  />
                 </div>
               </Link>
             </div>
@@ -80,7 +96,12 @@ const Partners = () => {
             <div className='single-partners-box'>
               <Link href='#'>
                 <div className='img'>
-                  <Image src={footbpartner6} alt='image' />
+                  <Image
+                    src='/images/football/partner/footb-partner6.png'
+                    alt='image'
+                    width={185}
+                    height={60}
+                  />
                 </div>
               </Link>
             </div>
@@ -90,7 +111,12 @@ const Partners = () => {
             <div className='single-partners-box'>
               <Link href='#'>
                 <div className='img'>
-                  <Image src={footbpartner7} alt='image' />
+                  <Image
+                    src='/images/football/partner/footb-partner6.png'
+                    alt='image'
+                    width={185}
+                    height={60}
+                  />
                 </div>
               </Link>
             </div>
@@ -100,7 +126,12 @@ const Partners = () => {
             <div className='single-partners-box'>
               <Link href='#'>
                 <div className='img'>
-                  <Image src={footbpartner8} alt='image' />
+                  <Image
+                    src='/images/football/partner/footb-partner7.png'
+                    alt='image'
+                    width={185}
+                    height={60}
+                  />
                 </div>
               </Link>
             </div>

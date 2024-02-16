@@ -1,0 +1,122 @@
+[debug] [2024-02-15T23:29:28.697Z] ----------------------------------------------------------------------
+[debug] [2024-02-15T23:29:28.698Z] Command:       /usr/local/bin/node /home/bryant/.npm-global/bin/firebase deploy
+[debug] [2024-02-15T23:29:28.699Z] CLI Version:   13.2.1
+[debug] [2024-02-15T23:29:28.699Z] Platform:      linux
+[debug] [2024-02-15T23:29:28.699Z] Node Version:  v21.3.0
+[debug] [2024-02-15T23:29:28.699Z] Time:          Thu Feb 15 2024 17:29:28 GMT-0600 (Central Standard Time)
+[debug] [2024-02-15T23:29:28.699Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-15T23:29:28.745Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-15T23:29:28.745Z] > authorizing via signed-in user (dragonseyeimages@gmail.com)
+[debug] [2024-02-15T23:29:28.745Z] [iam] checking project dickson-dolphins for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-02-15T23:29:28.746Z] > refreshing access token with scopes: []
+[debug] [2024-02-15T23:29:28.747Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-15T23:29:28.747Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-15T23:29:28.999Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-02-15T23:29:28.999Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-15T23:29:29.006Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dickson-dolphins:testIamPermissions [none]
+[debug] [2024-02-15T23:29:29.006Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dickson-dolphins:testIamPermissions x-goog-quota-user=projects/dickson-dolphins
+[debug] [2024-02-15T23:29:29.006Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dickson-dolphins:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-15T23:29:29.312Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dickson-dolphins:testIamPermissions 200
+[debug] [2024-02-15T23:29:29.313Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dickson-dolphins:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-15T23:29:29.314Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/dickson-dolphins/serviceAccounts/dickson-dolphins@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-02-15T23:29:29.314Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/dickson-dolphins/serviceAccounts/dickson-dolphins@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-02-15T23:29:29.667Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/dickson-dolphins/serviceAccounts/dickson-dolphins@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-02-15T23:29:29.667Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/dickson-dolphins/serviceAccounts/dickson-dolphins@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-02-15T23:29:29.670Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dickson-dolphins [none]
+[debug] [2024-02-15T23:29:30.004Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dickson-dolphins 200
+[debug] [2024-02-15T23:29:30.005Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dickson-dolphins {"projectId":"dickson-dolphins","projectNumber":"812215297744","displayName":"dickson-dolphins","name":"projects/dickson-dolphins","resources":{"hostingSite":"dickson-dolphins"},"state":"ACTIVE","etag":"1_06b7419b-82de-4d4a-8c02-a81f2228cbdc"}
+[info] 
+[info] === Deploying to 'dickson-dolphins'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2024-02-15T23:29:30.017Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dickson-dolphins [none]
+[debug] [2024-02-15T23:29:30.222Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dickson-dolphins 200
+[debug] [2024-02-15T23:29:30.222Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dickson-dolphins {"projectId":"dickson-dolphins","projectNumber":"812215297744","displayName":"dickson-dolphins","name":"projects/dickson-dolphins","resources":{"hostingSite":"dickson-dolphins"},"state":"ACTIVE","etag":"1_06b7419b-82de-4d4a-8c02-a81f2228cbdc"}
+[info] i  functions: preparing codebase next-server for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-02-15T23:29:30.226Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dickson-dolphins/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-02-15T23:29:30.226Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dickson-dolphins/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/dickson-dolphins
+[debug] [2024-02-15T23:29:30.227Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dickson-dolphins/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-02-15T23:29:30.227Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dickson-dolphins/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/dickson-dolphins
+[debug] [2024-02-15T23:29:30.228Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dickson-dolphins/services/cloudbuild.googleapis.com [none]
+[debug] [2024-02-15T23:29:30.228Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dickson-dolphins/services/cloudbuild.googleapis.com x-goog-quota-user=projects/dickson-dolphins
+[debug] [2024-02-15T23:29:30.229Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dickson-dolphins/services/artifactregistry.googleapis.com [none]
+[debug] [2024-02-15T23:29:30.229Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dickson-dolphins/services/artifactregistry.googleapis.com x-goog-quota-user=projects/dickson-dolphins
+[debug] [2024-02-15T23:29:30.678Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dickson-dolphins/services/cloudbuild.googleapis.com 200
+[debug] [2024-02-15T23:29:30.678Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dickson-dolphins/services/cloudbuild.googleapis.com [omitted]
+[info] ✔  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2024-02-15T23:29:30.692Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dickson-dolphins/services/runtimeconfig.googleapis.com 200
+[debug] [2024-02-15T23:29:30.692Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dickson-dolphins/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-02-15T23:29:30.694Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dickson-dolphins/services/cloudfunctions.googleapis.com 200
+[debug] [2024-02-15T23:29:30.694Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dickson-dolphins/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-02-15T23:29:30.754Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dickson-dolphins/services/artifactregistry.googleapis.com 200
+[debug] [2024-02-15T23:29:30.754Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dickson-dolphins/services/artifactregistry.googleapis.com [omitted]
+[info] ✔  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2024-02-15T23:29:30.754Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dickson-dolphins/adminSdkConfig [none]
+[debug] [2024-02-15T23:29:30.982Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dickson-dolphins/adminSdkConfig 200
+[debug] [2024-02-15T23:29:30.983Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dickson-dolphins/adminSdkConfig {"projectId":"dickson-dolphins","storageBucket":"dickson-dolphins.appspot.com"}
+[debug] [2024-02-15T23:29:30.984Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/dickson-dolphins/configs [none]
+[debug] [2024-02-15T23:29:31.433Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/dickson-dolphins/configs 200
+[debug] [2024-02-15T23:29:31.433Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/dickson-dolphins/configs {}
+[debug] [2024-02-15T23:29:31.436Z] Validating nodejs source
+[debug] [2024-02-15T23:29:31.891Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase with Next.js",
+  "scripts": {
+    "dev": "next dev",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "build": "next build",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "lint": "next lint"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "firebase": "^10.8.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-modal-video": "^2.0.1",
+    "react-photoswipe-gallery": "^3.0.1",
+    "sharp": "^0.33.2"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "^14.1.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-15T23:29:31.891Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase next-server to determine what to deploy 
+[debug] [2024-02-15T23:29:31.892Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-15T23:29:31.896Z] Found firebase-functions binary at '/home/bryant/Projects/dickson-team/dickson-dolphins-portal/next-server/node_modules/.bin/firebase-functions'
+[info] Serving at port 8275
+
+[debug] [2024-02-15T23:29:32.121Z] Got response from /__/functions.yaml {"endpoints":{"nextServer":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"nextServer"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] i  functions: preparing next-server directory for uploading... 
+[info] i  functions: packaged /home/bryant/Projects/dickson-team/dickson-dolphins-portal/next-server (110.74 MB) for uploading 
+[debug] [2024-02-15T23:29:40.676Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/dickson-dolphins/locations/-/functions [none]
+[debug] [2024-02-15T23:29:41.326Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/dickson-dolphins/locations/-/functions 200
+[debug] [2024-02-15T23:29:41.327Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/dickson-dolphins/locations/-/functions {"functions":[{"name":"projects/dickson-dolphins/locations/us-central1/functions/nextServer","httpsTrigger":{"url":"https://us-central1-dickson-dolphins.cloudfunctions.net/nextServer","securityLevel":"SECURE_ALWAYS"},"status":"ACTIVE","entryPoint":"nextServer","timeout":"60s","availableMemoryMb":256,"serviceAccountEmail":"dickson-dolphins@appspot.gserviceaccount.com","updateTime":"2024-02-15T22:56:56.238Z","versionId":"3","labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"next-server","firebase-functions-hash":"fea12d134bf431d104eabaa095cc4ea0029ef5df"},"sourceUploadUrl":"https://storage.googleapis.com/uploads-810065579759.us-central1.cloudfunctions.appspot.com/0cec211e-a75f-409c-8ce7-6a539f409257.zip","environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"dickson-dolphins\",\"storageBucket\":\"dickson-dolphins.appspot.com\"}","GCLOUD_PROJECT":"dickson-dolphins","EVENTARC_CLOUD_EVENT_SOURCE":"projects/dickson-dolphins/locations/us-central1/functions/nextServer"},"runtime":"nodejs18","ingressSettings":"ALLOW_ALL","buildId":"55699e8e-ad13-427a-87bc-dc027a06fafb","buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"buildName":"projects/812215297744/locations/us-central1/builds/55699e8e-ad13-427a-87bc-dc027a06fafb","dockerRegistry":"ARTIFACT_REGISTRY","automaticUpdatePolicy":{}}]}
+[debug] [2024-02-15T23:29:41.331Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/dickson-dolphins/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2024-02-15T23:29:41.881Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/dickson-dolphins/locations/-/functions 200
+[debug] [2024-02-15T23:29:41.881Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/dickson-dolphins/locations/-/functions {}
+[debug] [2024-02-15T23:29:41.886Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dickson-dolphins [none]
+[debug] [2024-02-15T23:29:42.155Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dickson-dolphins 200
+[debug] [2024-02-15T23:29:42.155Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dickson-dolphins {"projectId":"dickson-dolphins","projectNumber":"812215297744","displayName":"dickson-dolphins","name":"projects/dickson-dolphins","resources":{"hostingSite":"dickson-dolphins"},"state":"ACTIVE","etag":"1_06b7419b-82de-4d4a-8c02-a81f2228cbdc"}
+[debug] [2024-02-15T23:29:42.165Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dickson-dolphins/versions [none]
+[debug] [2024-02-15T23:29:42.165Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dickson-dolphins/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}

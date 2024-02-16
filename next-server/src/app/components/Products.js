@@ -1,11 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-// image imports
-import footbproduct1 from '../../../public/images/football/products/footb-product1.jpg'
-import footbproduct2 from '../../../public/images/football/products/footb-product2.jpg'
-import footbproduct3 from '../../../public/images/football/products/footb-product3.jpg'
-import footbproduct4 from '../../../public/images/football/products/footb-product4.jpg'
 
 const Products = () => {
   return (
@@ -25,7 +20,12 @@ const Products = () => {
           <div className='col-lg-3 col-sm-6'>
             <div className='single-products-box'>
               <div className='img'>
-                <Image src={footbproduct1} alt='image' />
+                <Image
+                  src='/images/football/products/footb-product1'
+                  alt='image'
+                  width={750}
+                  height={1000}
+                />
               </div>
 
               <div className='content'>
@@ -48,7 +48,12 @@ const Products = () => {
           <div className='col-lg-3 col-sm-6'>
             <div className='single-products-box'>
               <div className='img'>
-                <Image src={footbproduct2} alt='image' />
+                <Image
+                  src='/images/football/products/footb-product2'
+                  alt='image'
+                  width={750}
+                  height={1000}
+                />
               </div>
 
               <div className='content'>
@@ -72,7 +77,12 @@ const Products = () => {
           <div className='col-lg-3 col-sm-6'>
             <div className='single-products-box'>
               <div className='img'>
-                <Image src={footbproduct3} alt='image' />
+                <Image
+                  src='/images/football/products/footb-product3'
+                  alt='image'
+                  width={750}
+                  height={1000}
+                />
               </div>
 
               <div className='content'>
@@ -96,7 +106,12 @@ const Products = () => {
           <div className='col-lg-3 col-sm-6'>
             <div className='single-products-box'>
               <div className='img'>
-                <Image src={footbproduct4} alt='image' />
+                <Image
+                  src='/images/football/products/footb-product4'
+                  alt='image'
+                  width={750}
+                  height={1000}
+                />
               </div>
 
               <div className='content'>

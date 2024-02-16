@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
-import OwlCarousel from 'react-owl-carousel3'
+// import OwlCarousel from 'react-owl-carousel3'
 import Image from 'next/image'
 
 // const OwlCarousel = dynamic(import('react-owl-carousel3'))
@@ -35,13 +35,6 @@ const options = {
   },
 }
 
-const images = [
-  '/images/football/gallery/footb-gallery1.jpg',
-  '/images/football/gallery/footb-gallery2.jpg',
-  '/images/football/gallery/footb-gallery3.jpg',
-  '/images/football/gallery/footb-gallery4.jpg',
-]
-
 const Gallery = () => {
   const [display, setDisplay] = React.useState(false)
   const [photoIndex, setPhotoIndex] = React.useState(0)
@@ -65,7 +58,7 @@ const Gallery = () => {
             </p>
           </div>
 
-          {display ? (
+          {/* {display ? (
             <OwlCarousel
               className='gallery-slides owl-carousel owl-theme'
               {...options}
@@ -73,8 +66,11 @@ const Gallery = () => {
               <div className='single-gallery-item'>
                 <div className='img'>
                   <Image
-                    src='/images/football/gallery/footb-gallery1.jpg'
+                    src='/images/football/gallery/footb-gallery1.jpg
                     alt='image'
+                    
+                    width={750}
+                    height={1000}
                   />
                 </div>
 
@@ -92,8 +88,11 @@ const Gallery = () => {
               <div className='single-gallery-item'>
                 <div className='img'>
                   <Image
-                    src='/images/football/gallery/footb-gallery2.jpg'
+                    src='/images/football/gallery/footb-gallery2.jpg
                     alt='image'
+                    
+                    width={750}
+                    height={1000}
                   />
                 </div>
 
@@ -111,8 +110,11 @@ const Gallery = () => {
               <div className='single-gallery-item'>
                 <div className='img'>
                   <Image
-                    src='/images/football/gallery/footb-gallery3.jpg'
+                    src='/images/football/gallery/footb-gallery3.jpg
                     alt='image'
+                    
+                    width={750}
+                    height={1000}
                   />
                 </div>
 
@@ -130,8 +132,11 @@ const Gallery = () => {
               <div className='single-gallery-item'>
                 <div className='img'>
                   <Image
-                    src='/images/football/gallery/footb-gallery4.jpg'
+                    src='/images/football/gallery/footb-gallery4.jpg
                     alt='image'
+                    
+                    width={750}
+                    height={1000}
                   />
                 </div>
 
@@ -148,12 +153,17 @@ const Gallery = () => {
             </OwlCarousel>
           ) : (
             ''
-          )}
+          )} */}
         </div>
 
         <div className='gallery-shape1'>
           <div className='img'>
-            <Image src='/images/football/footb-player2.png' alt='image' />
+            <Image
+              src='/images/football/footb-player2.png'
+              alt='image'
+              width={600}
+              height={623}
+            />
           </div>
         </div>
 

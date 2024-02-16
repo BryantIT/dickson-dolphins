@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
-import OwlCarousel from 'react-owl-carousel3'
+// import OwlCarousel from 'react-owl-carousel3'
 // const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
 import ModalVideo from 'react-modal-video'
@@ -39,7 +39,7 @@ class MatcheHighlights extends Component {
     return (
       <>
         <div id='highlights'>
-          {this.state.display ? (
+          {/* {this.state.display ? (
             <OwlCarousel
               className='matches-highlights-slides owl-carousel owl-theme'
               {...options}
@@ -162,7 +162,7 @@ class MatcheHighlights extends Component {
             </OwlCarousel>
           ) : (
             ''
-          )}
+          )} */}
         </div>
 
         {/* If you want to change the video need to update below videoID */}

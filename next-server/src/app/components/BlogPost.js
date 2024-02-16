@@ -1,10 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-// image imports
-import footbblog1 from '../../../public/images/football/blog/footb-blog1.jpg'
-import footbblog2 from '../../../public/images/football/blog/footb-blog2.jpg'
-import footbblog3 from '../../../public/images/football/blog/footb-blog3.jpg'
 
 const BlogPost = () => {
   return (
@@ -25,7 +21,12 @@ const BlogPost = () => {
             <div className='single-blog-post'>
               <div className='post-image'>
                 <div className='img'>
-                  <Image src={footbblog1} alt='image' />
+                  <Image
+                    src='/images/football/blog/footb-blog1.jpg'
+                    alt='image'
+                    width={750}
+                    height={500}
+                  />
                 </div>
                 <Link href='/football-single-blog'>
                   {/* <a target="_blank" className="link-btn"></a> */}
@@ -60,7 +61,12 @@ const BlogPost = () => {
             <div className='single-blog-post'>
               <div className='post-image'>
                 <div className='img'>
-                  <Image src={footbblog2} alt='image' />
+                  <Image
+                    src='/images/football/blog/footb-blog2.jpg'
+                    alt='image'
+                    width={750}
+                    height={500}
+                  />
                 </div>
                 <Link href='/football-single-blog'>
                   {/* <a target='_blank' className='link-btn'></a> */}
@@ -97,7 +103,12 @@ const BlogPost = () => {
             <div className='single-blog-post'>
               <div className='post-image'>
                 <div className='img'>
-                  <Image src={footbblog3} alt='image' />
+                  <Image
+                    src='/images/football/blog/footb-blog3.jpg'
+                    alt='image'
+                    width={750}
+                    height={500}
+                  />
                 </div>
                 <Link href='/football-single-blog'>
                   {/* <a target='_blank' className='link-btn'></a> */}

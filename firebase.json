@@ -4,7 +4,8 @@
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      ".next/**"
     ],
     "rewrites": [
       {
@@ -13,16 +14,22 @@
       }
     ]
   },
-  "functions": [
-    {
-      "source": "next-server",
-      "codebase": "next-server",
-      "ignore": [
-        "node_modules",
-        ".git",
-        "firebase-debug.log",
-        "firebase-debug.*.log"
-      ]
+  "emulators": {
+    "ui": {
+      "enabled": true,
+      "port": 4001
+    },
+    "functions": {
+      "port": 5002
+    },
+    "hosting": {
+      "port": 5002
+    },
+    "logging": {
+      "port": 4501
     }
-  ]
+  },
+  "functions": {
+    "source": "next-server"
+  }
 }

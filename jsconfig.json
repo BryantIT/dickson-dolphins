@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["next-server/src/*rver/src/*rver/src/*"]
+      "@/*": ["next-server/src/*"]
     }
-  }
+  },
+  "exclude": ["node_modules", "next-server/node_modules", "next-server/.next"]
 }

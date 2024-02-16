@@ -14,6 +14,7 @@ const nextApp = next({
   dev: false,
   conf: { distDir: '.next' },
 })
+
 const handle = nextApp.getRequestHandler()
 
 exports.nextServer = functions.https.onRequest((request, response) => {
