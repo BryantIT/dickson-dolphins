@@ -63,7 +63,6 @@ const Navbar = () => {
       <div className='container-fluid'>
         <Link href='/football'>
           <div className='navbar-brand'>
-            cd nex
             <Image
               src='/images/football/logo.jpeg'
               alt='logo'
