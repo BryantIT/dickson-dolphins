@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Banner from '../../src/app/components/Banner'
+import Banner from '../../src/app/components/banner/Banner'
 import NextMatch from '../../src/app/components/NextMatch'
 import UpcomingMatches from '../../src/app/components/UpcomingMatches'
 import MatcheHighlights from '../../src/app/components/MatcheHighlights'
