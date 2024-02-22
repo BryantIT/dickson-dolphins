@@ -7,14 +7,15 @@ import MatcheHighlights from '../../src/app/components/MatcheHighlights'
 import Products from '../../src/app/components/Products'
 import Partners from '../../src/app/components/Partners'
 import Gallery from '../../src/app/components/Gallery'
-import Subscribe from '../../src/app/components/Subscribe'
+// import Subscribe from '../../src/app/components/Subscribe'
 import BlogPost from '../../src/app/components/BlogPost'
-import Navbar from '../../src/app/components/Navbar'
+import Navbar from '../../src/app/components/nav/Navbar'
 
 const Football = () => {
   return (
     <>
       <Navbar />
+
       <Banner />
 
       <NextMatch />
@@ -29,7 +30,7 @@ const Football = () => {
 
       <Gallery />
 
-      <Subscribe />
+      {/* <Subscribe /> */}
 
       <BlogPost />
     </>
