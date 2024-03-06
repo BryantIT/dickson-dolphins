@@ -141,7 +141,7 @@ nav .wrapper {
     max-width: 350px;
     top: 0;
     left: -100%;
-    background: #242526;
+    background: #005778;
     display: block;
     padding: 50px 10px;
     line-height: 50px;
@@ -154,7 +154,7 @@ nav .wrapper {
     width: 10px;
   }
   ::-webkit-scrollbar-track {
-    background: #242526;
+    background: #005778;
   }
   ::-webkit-scrollbar-thumb {
     background: #3a3b3c;

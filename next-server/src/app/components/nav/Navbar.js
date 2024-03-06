@@ -17,7 +17,7 @@ const Navbar = () => {
           <input type='radio' name='slider' id='menu-btn' />
           <input type='radio' name='slider' id='close-btn' />
           <ul className='nav-links'>
-            <label for='close-btn' className='btn close-btn'>
+            <label htmlFor='close-btn' className='btn close-btn'>
               <FaXmark />
             </label>
             <li>
@@ -31,7 +31,7 @@ const Navbar = () => {
                 Dropdown Menu
               </a>
               <input type='checkbox' id='showDrop' />
-              <label for='showDrop' className='mobile-item'>
+              <label htmlFor='showDrop' className='mobile-item'>
                 Dropdown Menu
               </label>
               <ul className='drop-menu'>
@@ -54,7 +54,7 @@ const Navbar = () => {
                 Football
               </a>
               <input type='checkbox' id='showMega' />
-              <label for='showMega' className='mobile-item'>
+              <label htmlFor='showMega' className='mobile-item'>
                 Football
               </label>
               <div className='mega-box'>
@@ -106,7 +106,7 @@ const Navbar = () => {
                 Cheer
               </a>
               <input type='checkbox' id='showMega' />
-              <label for='showMega' className='mobile-item'>
+              <label htmlFor='showMega' className='mobile-item'>
                 Cheer
               </label>
               <div className='mega-box'>
@@ -160,7 +160,7 @@ const Navbar = () => {
               <a href='#'>Sponsors</a>
             </li>
           </ul>
-          <label for='menu-btn' className='btn menu-btn'>
+          <label htmlFor='menu-btn' className='btn menu-btn'>
             <FaBars />
           </label>
         </div>

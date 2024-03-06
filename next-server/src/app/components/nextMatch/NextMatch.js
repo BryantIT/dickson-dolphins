@@ -1,13 +1,34 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
+import { collection, getDocs } from 'firebase/firestore'
+import { db } from '../../../../firebase'
 
 const NextMatch = () => {
-  const [days, setDays] = React.useState('')
-  const [hours, setHours] = React.useState('')
-  const [minutes, setMinutes] = React.useState('')
-  const [seconds, setSeconds] = React.useState('')
+  const [days, setDays] = useState('')
+  const [hours, setHours] = useState('')
+  const [minutes, setMinutes] = useState('')
+  const [seconds, setSeconds] = useState('')
+  const [eventData, setEventData] = useState([])
 
-  React.useEffect(() => {
+  const fetchEventData = async () => {
+    const querySnapshot = await getDocs(collection(db, 'events_calendar'))
+    const events = []
+    querySnapshot.forEach((doc) => {
+      console.log(doc.data())
+      events.push(doc.data())
+    })
+    setEventData(events[0])
+  }
+
+  const seeData = () => {
+    console.log(eventData)
+  }
+
+  useEffect(() => {
+    fetchEventData()
+  }, [])
+
+  useEffect(() => {
     const interval = setInterval(() => {
       commingSoonTime()
     }, 1000)
@@ -52,6 +73,7 @@ const NextMatch = () => {
                   <div className='col-lg-5 col-md-5'>
                     <h2>Next Match</h2>
                     <span className='sub-title'>
+                      <button onClick={seeData}>Fetch Data</button>
                       Champions League - 20 April, 2020
                     </span>
                   </div>
