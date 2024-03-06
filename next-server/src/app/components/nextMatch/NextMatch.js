@@ -1,66 +1,58 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
-import { collection, getDocs } from 'firebase/firestore'
-import { db } from '../../../../firebase'
+import { DateTime } from 'luxon'
+import { dateConversion } from '../../utility/timeHandler'
 
-const NextMatch = () => {
+const NextMatch = ({ eventData }) => {
   const [days, setDays] = useState('')
   const [hours, setHours] = useState('')
   const [minutes, setMinutes] = useState('')
-  const [seconds, setSeconds] = useState('')
-  const [eventData, setEventData] = useState([])
-
-  const fetchEventData = async () => {
-    const querySnapshot = await getDocs(collection(db, 'events_calendar'))
-    const events = []
-    querySnapshot.forEach((doc) => {
-      console.log(doc.data())
-      events.push(doc.data())
-    })
-    setEventData(events[0])
-  }
-
-  const seeData = () => {
-    console.log(eventData)
-  }
+  const [nextEvent, setNextEvent] = useState(null)
 
   useEffect(() => {
-    fetchEventData()
-  }, [])
+    if (eventData) {
+      const events = eventData
+      const now = DateTime.now()
+
+      let closestEvent = null
+      let closestsEventTime = Infinity
+
+      events.forEach((event) => {
+        const eventDateTime = dateConversion(
+          event.date.seconds,
+          event.date.nanoseconds
+        )
+        const timeDiff = eventDateTime.diff(now, 'seconds').seconds
+
+        if (timeDiff > 0 && timeDiff < closestsEventTime) {
+          closestsEventTime = timeDiff
+          closestEvent = event
+        }
+      })
+      setNextEvent(closestEvent)
+    }
+  }, [eventData])
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      commingSoonTime()
-    }, 1000)
+    if (!nextEvent) {
+      return
+    }
+    const countDownTimer = () => {
+      const now = DateTime.now()
+      const target = DateTime.fromSeconds(nextEvent.date.seconds).plus({
+        milliseconds: nextEvent.date.nanoseconds / 1e6,
+      })
+      const diff = target.diff(now, ['days', 'hours', 'minutes']).toObject()
+      setDays(diff.days)
+      setHours(diff.hours)
+      setMinutes(Math.floor(diff.minutes))
+    }
+    countDownTimer()
+
+    const interval = setInterval(countDownTimer, 60000)
+
     return () => clearInterval(interval)
-  }, [])
-
-  const commingSoonTime = () => {
-    let endTime = new Date('August 23, 2022 17:00:00 PDT')
-    let endTimeParse = Date.parse(endTime) / 1000
-    let now = new Date()
-    let nowParse = Date.parse(now) / 1000
-    let timeLeft = endTimeParse - nowParse
-    let days = Math.floor(timeLeft / 86400)
-    let hours = Math.floor((timeLeft - days * 86400) / 3600)
-    let minutes = Math.floor((timeLeft - days * 86400 - hours * 3600) / 60)
-    let seconds = Math.floor(
-      timeLeft - days * 86400 - hours * 3600 - minutes * 60
-    )
-    if (hours < '10') {
-      hours = '0' + hours
-    }
-    if (minutes < '10') {
-      minutes = '0' + minutes
-    }
-    if (seconds < '10') {
-      seconds = '0' + seconds
-    }
-    setDays(days)
-    setHours(hours)
-    setMinutes(minutes)
-    setSeconds(seconds)
-  }
+  }, [nextEvent])
 
   return (
     <section className='next-match-area'>
@@ -71,10 +63,9 @@ const NextMatch = () => {
               <div className='content'>
                 <div className='row align-items-center'>
                   <div className='col-lg-5 col-md-5'>
-                    <h2>Next Match</h2>
+                    <h2>Next Event:</h2>
                     <span className='sub-title'>
-                      <button onClick={seeData}>Fetch Data</button>
-                      Champions League - 20 April, 2020
+                      {nextEvent ? nextEvent.title : 'No Event'}
                     </span>
                   </div>
 
@@ -87,25 +78,20 @@ const NextMatch = () => {
                         id='days'
                         className='align-items-center flex-column d-flex justify-content-center'
                       >
-                        {days} <span>Days</span>
+                        {days} <span>{days === 1 ? 'Day' : 'Days'}</span>
                       </div>
                       <div
                         id='hours'
                         className='align-items-center flex-column d-flex justify-content-center'
                       >
-                        {hours} <span>Hours</span>
+                        {hours} <span>{hours === 1 ? 'Hour' : 'Hours'}</span>
                       </div>
                       <div
                         id='minutes'
                         className='align-items-center flex-column d-flex justify-content-center'
                       >
-                        {minutes} <span>Minutes</span>
-                      </div>
-                      <div
-                        id='seconds'
-                        className='align-items-center flex-column d-flex justify-content-center'
-                      >
-                        {seconds} <span>Seconds</span>
+                        {minutes}{' '}
+                        <span>{minutes === 1 ? 'Minute' : 'Minutes'}</span>
                       </div>
                     </div>
                   </div>
