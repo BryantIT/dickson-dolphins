@@ -164,100 +164,6 @@ p:last-child {
 }
 
 /*================================================
-Next Match Area CSS
-=================================================*/
-.next-match-area {
-  background-color: #161616;
-}
-
-.next-match-area .container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.next-match-area .container-fluid .row {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.next-match-area .container-fluid .row .col-lg-6 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.next-match-content {
-  position: relative;
-  z-index: 1;
-  padding-top: 130px;
-  padding-bottom: 130px;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-
-.next-match-content .content {
-  margin-left: 0;
-  max-width: 100%;
-}
-
-.next-match-content .content h2 {
-  text-transform: uppercase;
-  margin-bottom: 3px;
-  font-size: 40px;
-  font-weight: 600;
-}
-
-.next-match-content .content .sub-title {
-  display: block;
-  color: #fc4c02;
-  line-height: 1;
-  letter-spacing: 0.5px;
-  font-size: 19px;
-  font-weight: 500;
-}
-
-.next-match-content .content #timer div {
-  background-color: #fc4c02;
-  color: #ffffff;
-  width: 80px;
-  height: 90px;
-  border-radius: 5px;
-  font-size: 40px;
-  font-weight: 600;
-  margin-left: 7px;
-  margin-right: 7px;
-}
-
-.next-match-content .content #timer div span {
-  display: block;
-  margin-top: -10px;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-.next-match-content .shape1 {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  z-index: -1;
-}
-
-.next-match-image {
-  width: 100%;
-  height: 100%;
-  background-image: url(/images/football/footb-field.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.next-match-image img {
-  display: none;
-}
-
-/*================================================
 Upcoming Matches Area CSS
 =================================================*/
 .upcoming-matches-area {
@@ -396,15 +302,6 @@ Upcoming Matches Area CSS
 .upcoming-matches-slides.owl-theme .owl-nav [class*='owl-']:hover {
   background-color: #fc4c02;
   color: #ffffff;
-}
-
-.upcoming-matches-shape1 {
-  position: absolute;
-  left: 0;
-  top: 80%;
-  -webkit-transform: translateY(-80%);
-  transform: translateY(-80%);
-  z-index: -1;
 }
 
 /*================================================
@@ -2373,49 +2270,7 @@ Footer Area CSS
     padding: 10px 40px 6px;
     font-size: 15px;
   }
-  .next-match-area {
-    padding-bottom: 60px;
-  }
-  .next-match-area .container-fluid {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .next-match-content {
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .next-match-content .content {
-    max-width: 100%;
-  }
-  .next-match-content .content h2 {
-    font-size: 25px;
-  }
-  .next-match-content .content .sub-title {
-    font-size: 16px;
-  }
-  .next-match-content .content #timer {
-    margin-top: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .next-match-content .content #timer div {
-    margin-top: 20px;
-    font-size: 35px;
-  }
-  .next-match-content .content #timer div span {
-    margin-top: -5px;
-    font-size: 15px;
-  }
-  .next-match-image {
-    height: auto;
-    background-image: unset !important;
-  }
-  .next-match-image img {
-    display: inline-block;
-  }
+
   .single-upcoming-matches-item {
     margin-top: 10px;
   }
@@ -2465,9 +2320,7 @@ Footer Area CSS
     left: 0;
     right: 0;
   }
-  .upcoming-matches-shape1 {
-    display: none;
-  }
+
   .single-matches-highlights-item {
     padding-top: 100px;
     padding-bottom: 120px;
@@ -2731,9 +2584,6 @@ Footer Area CSS
     width: 325px;
   }
 
-  .next-match-area .container-fluid {
-    max-width: 540px;
-  }
   .blog-details-desc .article-footer {
     text-align: left;
   }
@@ -2807,43 +2657,6 @@ Footer Area CSS
     font-size: 16px;
   }
 
-  .next-match-area .container-fluid {
-    max-width: 720px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .next-match-content {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .next-match-content .content {
-    margin-left: 0;
-    max-width: 100%;
-  }
-  .next-match-content .content h2 {
-    font-size: 35px;
-  }
-  .next-match-content .content .sub-title {
-    font-size: 18px;
-  }
-  .next-match-content .content #timer div {
-    width: 75px;
-    height: 80px;
-    font-size: 35px;
-  }
-  .next-match-content .content #timer div span {
-    margin-top: -6px;
-    font-size: 15px;
-  }
-  .next-match-image {
-    height: auto;
-    background-image: unset !important;
-  }
-  .next-match-image img {
-    display: inline-block;
-  }
   .single-upcoming-matches-item {
     margin-top: 13px;
   }
@@ -2969,31 +2782,7 @@ Footer Area CSS
   .container {
     max-width: 960px;
   }
-  .next-match-content .content {
-    max-width: 100%;
-  }
-  .next-match-content .content .row .col-lg-5,
-  .next-match-content .content .row .col-lg-7 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .next-match-content .content #timer {
-    margin-top: 25px;
-  }
-  .next-match-content .content #timer.justify-content-center {
-    -ms-flex-pack: unset !important;
-    -webkit-box-pack: unset !important;
-    justify-content: unset !important;
-  }
-  .next-match-content .content #timer div {
-    margin-left: 7px;
-    margin-right: 7px;
-  }
-  .next-match-content .content #timer div:first-child {
-    margin-left: 0;
-  }
+
   .upcoming-matches-slides {
     max-width: 700px;
   }
@@ -3071,36 +2860,6 @@ Footer Area CSS
     left: auto;
     right: -30px;
   }
-  .next-match-content .content #timer div {
-    width: 56px;
-    font-size: 35px;
-    margin-left: 6px;
-    margin-right: 5px;
-  }
-  .next-match-content .content #timer div span {
-    font-size: 12px;
-    letter-spacing: 0.5px;
-  }
 }
 
-@media only screen and (min-width: 1336px) and (max-width: 1610px) {
-  .next-match-content .content #timer div {
-    width: 69px;
-    font-size: 35px;
-    margin-left: 6px;
-    margin-right: 5px;
-  }
-}
-
-/* Min width 1550px */
-@media only screen and (min-width: 1550px) {
-  .next-match-content {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-  .next-match-content .content {
-    margin-left: auto;
-    max-width: 725px;
-  }
-}
 /*# sourceMappingURL=responsive.css.map */

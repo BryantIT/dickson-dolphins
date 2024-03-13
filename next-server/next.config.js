@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // images: {
-  //   loader: 'akamai',
-  //   path: '',
-  // },
+  images: {
+    domains: ['localhost', 'firebasestorage.googleapis.com'],
+  },
 }
 
 module.exports = nextConfig
